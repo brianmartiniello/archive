@@ -132,11 +132,16 @@ alias gc='git checkout'
 alias gb='git branch'
 alias gba='git branch -a'
 alias gcb='git rev-parse --abbrev-ref HEAD'
-alias gcm='eval git commit -m \"\$(gcb): $1\"'
-alias gcma='eval git commit --amend -m \"\$(gcb): $1\"'
 alias gm='git merge'
-alias gps='eval git push -u origin $(gcb)'
+alias gps='git push -u origin $(gcb)'
 alias gpl='git pull'
+
+function gcm_func() {
+  cmd="git commit -m \"$(gcb): $1\""
+  echo "Running ($cmd)"
+  eval $cmd
+}
+alias gcm='gcm_func $1'
 
 alias python='python3'
 
