@@ -26,3 +26,15 @@ pycodestyle main.py
 
 ########################################################################
 ########################################################################
+
+# Check the version of the 'python' symlink
+ls -l $(which python)
+
+# Check the version of the 'pip' symlink
+ls -l $(which pip)
+
+# If 'python' points to Python 2 and you want it to point to Python 3:
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 1
+
+# If 'pip' points to the Python 2 version and you want it to point to the Python 3 version:
+sudo update-alternatives --install /usr/bin/pip pip /usr/bin/pip3 1

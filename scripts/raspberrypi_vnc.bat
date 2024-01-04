@@ -1,0 +1,5 @@
+start "" "C:\Program Files\PuTTY\putty.exe" -load "raspberrypi_vnc_1"
+start "" "C:\Program Files\PuTTY\putty.exe" -load "raspberrypi_vnc_2"
+start "" "C:\Program Files\PuTTY\putty.exe" -load "raspberrypi_vnc_3"
+start "" "C:\Program Files\PuTTY\putty.exe" -load "raspberrypi_vnc_4"
+start "" "C:\Program Files\PuTTY\putty.exe" -load "raspberrypi_vnc_5"
